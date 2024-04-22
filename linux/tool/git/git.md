@@ -20,7 +20,9 @@
 
    ​	集中式为所有电脑共用一个中央 Server，每台电脑可以在这个Server里下载或上传产品新的版本。
 
-   ​	但他有个明显的问题，Server一旦出现问题，整个工作部门的工作进程就会受到影响。![截屏2024-04-20 15.27.40](/Users/xiu/Library/Application Support/typora-user-images/截屏2024-04-20 15.27.40.png)
+   ​	但他有个明显的问题，Server一旦出现问题，整个工作部门的工作进程就会受到影响。
+
+   ![集中式版本控制系统](/Users/xiu/Desktop/git-repo/xiu'work/linux/tool/git/img/集中式版本管理.png)
 
 2. 分布式
 
@@ -28,7 +30,7 @@
 
    ​	Git 就是一种分布式版本控制系统，因为其开源、速度快、支持离线管理等特性，可以说已经成为目前最流行的版本控制系统了。像是GitHub、GitLab、Vue的等网站上的托管开源项目都是 Git 来管理的。
 
-   ![截屏2024-04-20 15.34.09](/Users/xiu/Library/Application Support/typora-user-images/截屏2024-04-20 15.34.09.png)
+   ![分布式版本管理系统](/Users/xiu/Desktop/git-repo/xiu'work/linux/tool/git/img/分布式版本管理.png)
 
 ## 1.3 Git 的安装
 
@@ -62,7 +64,7 @@ git -v # 查看git版本
 > git version 2.39.3 (Apple Git-146) # 安装成功
 ```
 
-![截屏2024-04-20 16.01.00](/Users/xiu/Library/Application Support/typora-user-images/截屏2024-04-20 16.01.00.png)
+![git安装成功](/Users/xiu/Desktop/git-repo/xiu'work/linux/tool/git/img/安装成功.png)
 
 ## 1.4 Git的配置
 
@@ -115,7 +117,7 @@ git config --global --list
    > . .. .git
    ```
 
-   ![截屏2024-04-20 16.28.38](/Users/xiu/Desktop/截屏2024-04-20 16.28.38.png)
+   ![Init查看隐藏文件](/Users/xiu/Desktop/git-repo/xiu'work/linux/tool/git/img/查看隐藏文件.png)
 
 2. **git clone**
 
@@ -148,7 +150,7 @@ git config --global --list
 
 三者关系：现在 “工作区” 完成任务，提交至 “暂存区”，再上传到 “本地仓库”。
 
-![截屏2024-04-20 16.45.24](/Users/xiu/Library/Application Support/typora-user-images/截屏2024-04-20 16.45.24.png)
+![工作空间](/Users/xiu/Desktop/git-repo/xiu'work/linux/tool/git/img/工作空间.png)
 
 ## 3.2 文件状态
 
@@ -170,7 +172,7 @@ git config --global --list
 
 ​	这里放一张视频截图表示四者关系
 
-![截屏2024-04-20 16.51.07](/Users/xiu/Library/Application Support/typora-user-images/截屏2024-04-20 16.51.07.png)
+![文件状态](/Users/xiu/Desktop/git-repo/xiu'work/linux/tool/git/img/文件状态.png)
 
 # 4. Git 指令操作
 
@@ -212,7 +214,7 @@ git status				# 查看仓库状态
 > nothing added to commit but untracked files present (use "git add" to track)
 ```
 
-![截屏2024-04-20 17.08.40](/Users/xiu/Library/Application Support/typora-user-images/截屏2024-04-20 17.08.40.png)
+![git_status](/Users/xiu/Desktop/git-repo/xiu'work/linux/tool/git/img/4.2 git status.png)
 
 ## 4.3 git add 添加到暂存区	
 
@@ -222,7 +224,7 @@ git status				# 查看仓库状态
 git add first.txt
 ```
 
-![截屏2024-04-20 17.10.22](/Users/xiu/Library/Application Support/typora-user-images/截屏2024-04-20 17.10.22.png)
+![git add](/Users/xiu/Desktop/git-repo/xiu'work/linux/tool/git/img/4.3 git add.png)
 
 ## 4.4 git commit 提交
 
@@ -239,7 +241,7 @@ git status
 git commit -m "This is the first file"
 ```
 
-![截屏2024-04-20 17.24.42](/Users/xiu/Library/Application Support/typora-user-images/截屏2024-04-20 17.24.42.png)
+![git commit](/Users/xiu/Desktop/git-repo/xiu'work/linux/tool/git/img/4.4 git commit.png)
 
 第二个文件上传，上传时不添加 `-m`，会出现一个交互式窗口。和上面其实是一样的，也要添加上传信息。
 
@@ -249,9 +251,9 @@ git status
 git commit
 ```
 
-![截屏2024-04-20 17.30.02](/Users/xiu/Library/Application Support/typora-user-images/截屏2024-04-20 17.30.02.png)
+![git commit -m1](/Users/xiu/Desktop/git-repo/xiu'work/linux/tool/git/img/4.4-m git commit1.png)
 
-![截屏2024-04-20 17.27.12](/Users/xiu/Library/Application Support/typora-user-images/截屏2024-04-20 17.27.12.png)
+![git commit-m2](/Users/xiu/Desktop/git-repo/xiu'work/linux/tool/git/img/4.4-m git commit2.png)
 
 ## 4.5 git log 日志	
 
@@ -263,9 +265,9 @@ git log
 git log --oneline # 简单版日志
 ```
 
-![截屏2024-04-20 17.36.17](/Users/xiu/Library/Application Support/typora-user-images/截屏2024-04-20 17.36.17.png)
+![git log1](/Users/xiu/Desktop/git-repo/xiu'work/linux/tool/git/img/4.5 git log1.png)
 
-![截屏2024-04-20 17.39.01](/Users/xiu/Library/Application Support/typora-user-images/截屏2024-04-20 17.39.01.png)
+![git log2](/Users/xiu/Desktop/git-repo/xiu'work/linux/tool/git/img/4.5git log2.png)
 
 ## 4.6 git reset 回溯
 
